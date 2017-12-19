@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>iaas</title>
+</head>
+<body bgcolor="safron">
+
+<form action="http://127.0.0.1/cgi-bin/iaas_input.py" method="POST">
+
+<h2>enter name of the instance</h2>
+<input type=text name=instance>
+
+<h2>port</h2>
+<input type=number   name=port>
+
+<h2>  select os </h2>
+<table height='100' width='200' border='3'>
+<tr>
+	<th> sl no.</th>
+	<th>available os name</th>
+</tr>
+<tr>
+	<td>1</td>
+	<td><input type=radio name=os value='re'>redhat</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td><input type=radio name=os value='wi1'>windows7</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td><input type=radio name=os value='wi2'>windows10</td>
+</tr>
+<tr>
+	<td>4</td>
+	<td><input type=radio name=os value='kali'>kali</td>
+</tr>
+<tr>
+	<td>5</td>
+	<td><input type=radio name=os value='ub'>ubuntu</td>
+</tr>
+</table>
+
+<h2>ram size</h2>
+<table height='100' width='200' border='3'>
+<tr>
+        <th> sl no.</th>
+        <th>select ram size</th>
+</tr>
+<tr>
+        <td>1</td>
+        <td><input type=radio name=ram value='r1'>512mb</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td><input type=radio name=ram value='r2'>1024mb</td>
+</tr>
+<tr>
+        <td>3</td>
+        <td><input type=radio name=ram value='r3'>2048mb</td>
+</tr>
+</table>
+
+<h2>cpu size</h2>
+<table height='100' width='200' border='3'>
+<tr>
+        <th> sl no.</th>
+        <th>select no. of cpu core</th>
+</tr>
+<tr>
+        <td>1</td>
+        <td><input type=radio name=cpu value='c1'>1 core</td>
+</tr>
+<tr>
+        <td>2</td>
+        <td><input type=radio name=cpu value='c2'>2 core</td>
+</tr>
+</table>
+
+<h2>hard disk</h2>
+<table height='100' width='200' border='3'>
+<tr>
+        <th> sl no.</th>
+        <th>select hard disk size</th> 
+</tr>
+<tr>
+        <td>1</td>
+        <td><input type=radio name=disk value='d1'>20gb</td>
+</tr>
+<tr>
+        <td>2</td>
+        <td><input type=radio name=disk value='d2'>30gb</td>
+</tr>
+<tr>
+        <td>3</td>
+        <td><input type=radio name=disk value='d1'>40gb</td>
+</tr>
+</table>
+<h4>submit to confirm</h4>
+<input type="submit" value="submit">
+</form>
+</body>
+</html>
+
